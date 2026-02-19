@@ -41,7 +41,6 @@ def send_alert(message: str) -> bool:
         payload = {
             "chat_id": chat_id,
             "text": chunk,
-            "parse_mode": "Markdown",
         }
         try:
             response = requests.post(url, json=payload, timeout=15)
@@ -55,13 +54,25 @@ def send_alert(message: str) -> bool:
 
 
 def _split_message(text: str, limit: int = 4096) -> list:
-    """Split long messages into chunks that fit Telegram's limit."""
+    """Split long messages into chunks at newline boundaries to keep them readable."""
     if len(text) <= limit:
         return [text]
+
     chunks = []
     while text:
-        chunks.append(text[:limit])
-        text = text[limit:]
+        if len(text) <= limit:
+            chunks.append(text)
+            break
+
+        # Find the last newline within the limit
+        split_at = text.rfind("\n", 0, limit)
+        if split_at == -1:
+            # No newline found — hard split at limit (rare edge case)
+            split_at = limit
+
+        chunks.append(text[:split_at])
+        text = text[split_at:].lstrip("\n")
+
     return chunks
 
 
