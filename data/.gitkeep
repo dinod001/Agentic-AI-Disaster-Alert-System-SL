@@ -1,0 +1,2 @@
+# This file is intentionally empty to ensure the data/ directory exists in the repo.
+# alert_state.json is generated at runtime and cached by GitHub Actions.
