@@ -10,6 +10,7 @@
 ![Python](https://img.shields.io/badge/python-3.11-blue?logo=python&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini_2.5_Flash-AI-orange?logo=google&logoColor=white)
 ![Telegram](https://img.shields.io/badge/Telegram-Bot-26A5E4?logo=telegram&logoColor=white)
+[![Join Telegram](https://img.shields.io/badge/Join-Telegram_Channel-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/AiDisaster)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 </div>
@@ -81,7 +82,7 @@ This system continuously monitors **39 flood stations** and **25 landslide-prone
 | **AI Alerts** | Gemini 2.5 Flash generates bilingual English + Sinhala alerts |
 | **Smart Tone** | WATCH = advisory, WARNING = urgent, CRITICAL = life-threatening |
 | **Deduplication** | JSON state tracking prevents spam — alerts only when risk changes |
-| **Telegram** | Auto-delivers to configured Telegram channel/chat |
+| **Telegram** | Auto-delivers to [t.me/AiDisaster](https://t.me/AiDisaster) via configured bot |
 | **Scheduled** | Runs every hour via GitHub Actions cron (free) |
 | **Disclaimer** | Every alert clearly states this is AI-generated, not government-issued |
 
