@@ -20,7 +20,7 @@ def run_cycle():
     try:
         alert = agent.generate_report()
         if alert:
-            logger.info("Alert generated successfully")
+            logger.info("Alert generated successfully (%d characters)", len(alert))
             sys.stdout.reconfigure(encoding="utf-8")
             SL_TZ = timezone(timedelta(hours=5, minutes=30))
             timestamp = datetime.now(SL_TZ).strftime("🕐 %Y-%m-%d %H:%M:%S")

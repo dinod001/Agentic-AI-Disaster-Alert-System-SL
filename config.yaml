@@ -130,5 +130,5 @@ landslide_zones:
 gemini:
   model: "gemini-2.5-flash"       # Free tier, supports Sinhala (සිංහල)
   temperature: 0                   # Deterministic — no hallucination for alerts
-  max_output_tokens: 2048
+  max_output_tokens: 4096          # Increased for longer bilingual reports
   language: "si"                   # Sinhala language code
