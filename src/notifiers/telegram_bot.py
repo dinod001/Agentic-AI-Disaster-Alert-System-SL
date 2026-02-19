@@ -53,8 +53,12 @@ def send_alert(message: str) -> bool:
     return success
 
 
-def _split_message(text: str, limit: int = 4096) -> list:
-    """Split long messages into chunks at newline boundaries to keep them readable."""
+def _split_message(text: str, limit: int = 4000) -> list:
+    """
+    Split long messages into readable chunks.
+    Tries to break at: newline → sentence (.) → word (space) → hard cut.
+    Uses 4000 instead of 4096 for safety margin.
+    """
     if len(text) <= limit:
         return [text]
 
@@ -64,14 +68,27 @@ def _split_message(text: str, limit: int = 4096) -> list:
             chunks.append(text)
             break
 
-        # Find the last newline within the limit
+        # Priority 1: Split at last newline
         split_at = text.rfind("\n", 0, limit)
+
+        # Priority 2: Split at last sentence (period + space)
+        if split_at == -1 or split_at < limit // 2:
+            better = text.rfind(". ", 0, limit)
+            if better != -1 and better > split_at:
+                split_at = better + 1  # include the period
+
+        # Priority 3: Split at last space (word boundary)
+        if split_at == -1 or split_at < limit // 2:
+            better = text.rfind(" ", 0, limit)
+            if better != -1 and better > split_at:
+                split_at = better
+
+        # Priority 4: Hard cut (should never happen with normal text)
         if split_at == -1:
-            # No newline found — hard split at limit (rare edge case)
             split_at = limit
 
-        chunks.append(text[:split_at])
-        text = text[split_at:].lstrip("\n")
+        chunks.append(text[:split_at].rstrip())
+        text = text[split_at:].lstrip()
 
     return chunks
 
