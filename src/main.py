@@ -1,6 +1,6 @@
 import sys
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -22,7 +22,8 @@ def run_cycle():
         if alert:
             logger.info("Alert generated successfully")
             sys.stdout.reconfigure(encoding="utf-8")
-            timestamp = datetime.now().strftime("🕐 %Y-%m-%d %H:%M:%S")
+            SL_TZ = timezone(timedelta(hours=5, minutes=30))
+            timestamp = datetime.now(SL_TZ).strftime("🕐 %Y-%m-%d %H:%M:%S")
             alert_with_time = f"{timestamp}\n\n{alert}"
             print("\n" + "=" * 60)
             print(alert_with_time)
