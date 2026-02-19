@@ -1,0 +1,18 @@
+{
+  "date": "2026-02-19",
+  "flood": [],
+  "landslide": [
+    {
+      "station": "Ududumbara",
+      "risk_level": "WATCH"
+    },
+    {
+      "station": "Laggala",
+      "risk_level": "WATCH"
+    },
+    {
+      "station": "Rattota",
+      "risk_level": "WATCH"
+    }
+  ]
+}
