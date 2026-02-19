@@ -1,2 +1,6 @@
 python-dotenv
 requests
+PyYAML
+langchain-google-genai 
+langchain-core
+apscheduler

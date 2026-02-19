@@ -1,0 +1,134 @@
+# ============================================================================
+#  Flood Monitoring Stations — Sri Lanka
+#  Coordinates for OpenWeatherMap API (lat/lon)
+# ============================================================================
+
+flood_stations:
+
+  # ── Kelani Ganga ──────────────────────────────────────────────────
+  Holombuwa:       { lat: 7.1853, lon: 80.2650 }
+  Glencourse:      { lat: 6.9786, lon: 80.2039 }
+  Hanwella:        { lat: 6.9011, lon: 80.0853 }
+  Deraniyagala:    { lat: 6.9583, lon: 80.3389 }
+  Kithulgala:      { lat: 6.9889, lon: 80.4139 }
+  Nagalagam Street: { lat: 6.9472, lon: 79.8803 }
+
+  # ── Kalu Ganga ────────────────────────────────────────────────────
+  Ellagawa:        { lat: 6.5786, lon: 80.3611 }
+  Rathnapura:      { lat: 6.6828, lon: 80.3992 }
+  Kalawellawa (Millakanda): { lat: 6.6125, lon: 80.3208 }
+  Moraketiya:      { lat: 6.4556, lon: 80.5833 }
+  Magura:          { lat: 6.4833, lon: 80.4500 }
+
+  # ── Mahaweli Ganga ────────────────────────────────────────────────
+  Thaldena:        { lat: 7.0097, lon: 80.9917 }
+  Nawalapitiya:    { lat: 7.0583, lon: 80.5333 }
+  Manampitiya:     { lat: 7.9197, lon: 81.1069 }
+  Peradeniya:      { lat: 7.2689, lon: 80.5942 }
+  Weraganthota:    { lat: 7.3236, lon: 80.6792 }
+  Norwood:         { lat: 6.8356, lon: 80.6150 }
+
+  # ── Nilwala Ganga ─────────────────────────────────────────────────
+  Pitabeddara:     { lat: 6.2097, lon: 80.4431 }
+  Thalgahagoda:    { lat: 6.2372, lon: 80.5986 }
+  Nakkala:         { lat: 6.1333, lon: 80.5500 }
+
+  # ── Gin Ganga ─────────────────────────────────────────────────────
+  Baddegama:       { lat: 6.2306, lon: 80.1875 }
+  Thawalama:       { lat: 6.3458, lon: 80.3306 }
+
+  # ── Walawe Ganga ──────────────────────────────────────────────────
+  Thanamalwila:    { lat: 6.4431, lon: 81.1292 }
+  Wellawaya:       { lat: 6.7361, lon: 81.1028 }
+  Kuda Oya:        { lat: 6.4569, lon: 81.0500 }
+  Urawa:           { lat: 6.3694, lon: 81.0833 }
+
+  # ── Ma Oya ────────────────────────────────────────────────────────
+  Yaka Wewa:       { lat: 7.4833, lon: 80.1833 }
+
+  # ── Maha Oya ──────────────────────────────────────────────────────
+  Badalgama:       { lat: 7.2694, lon: 79.9633 }
+  Giriulla:        { lat: 7.3278, lon: 80.1233 }
+
+  # ── Deduru Oya ────────────────────────────────────────────────────
+  Dunamale:        { lat: 7.4875, lon: 80.2597 }
+  Panadugama:      { lat: 7.5250, lon: 80.0833 }
+
+  # ── Malwathu Oya ──────────────────────────────────────────────────
+  Thanthirimale:   { lat: 8.2125, lon: 80.2972 }
+
+  # ── Menik Ganga ───────────────────────────────────────────────────
+  Katharagama:     { lat: 6.4139, lon: 81.3347 }
+
+  # ── Kirindi Oya ───────────────────────────────────────────────────
+  Putupaula:       { lat: 6.3861, lon: 81.1389 }
+
+  # ── Mundeni Aru ───────────────────────────────────────────────────
+  Padiyathalawa:   { lat: 7.3389, lon: 81.2208 }
+
+  # ── Gal Oya ───────────────────────────────────────────────────────
+  Siyambalanduwa:  { lat: 6.9056, lon: 81.5528 }
+
+  # ── Dry Zone Tanks ────────────────────────────────────────────────
+  Galgamuwa:       { lat: 7.9792, lon: 80.3069 }
+  Horowpothana:    { lat: 8.5667, lon: 80.9167 }
+  Moragaswewa:     { lat: 8.0833, lon: 80.5667 }
+
+
+# ============================================================================
+#  Landslide-Prone Monitoring Zones — Sri Lanka
+#  High-risk areas in the central highlands & wet zone hill slopes
+# ============================================================================
+
+landslide_zones:
+
+  # ── Kegalle District (highest risk) ───────────────────────────────
+  Aranayake:       { lat: 7.1333, lon: 80.4667 }
+  Mawanella:       { lat: 7.2500, lon: 80.4500 }
+  Bulathkohupitiya: { lat: 7.1167, lon: 80.3167 }
+  Rambukkana:      { lat: 7.3250, lon: 80.3917 }
+  Yatiyanthota:    { lat: 7.0667, lon: 80.3000 }
+
+  # ── Ratnapura District ────────────────────────────────────────────
+  Kuruwita:        { lat: 6.7833, lon: 80.3667 }
+  Eheliyagoda:     { lat: 6.8500, lon: 80.2667 }
+  Ayagama:         { lat: 6.5833, lon: 80.4833 }
+  Pelmadulla:      { lat: 6.6167, lon: 80.5333 }
+
+  # ── Badulla District ──────────────────────────────────────────────
+  Koslanda:        { lat: 6.7500, lon: 80.9833 }
+  Haldummulla:     { lat: 6.7667, lon: 80.8833 }
+  Passara:         { lat: 6.9333, lon: 81.0667 }
+  Haputale:        { lat: 6.7667, lon: 80.9500 }
+  Bandarawela:     { lat: 6.8333, lon: 80.9833 }
+
+  # ── Nuwara Eliya District ─────────────────────────────────────────
+  Nuwara Eliya:    { lat: 6.9497, lon: 80.7892 }
+  Walapane:        { lat: 7.0667, lon: 80.8500 }
+  Kotmale:         { lat: 7.0500, lon: 80.5833 }
+  Ambewela:        { lat: 6.8833, lon: 80.7833 }
+
+  # ── Kandy District ───────────────────────────────────────────────
+  Kadugannawa:     { lat: 7.2500, lon: 80.5167 }
+  Deltota:         { lat: 7.1667, lon: 80.6333 }
+  Ududumbara:      { lat: 7.3167, lon: 80.8333 }
+
+  # ── Matale District ───────────────────────────────────────────────
+  Laggala:         { lat: 7.5333, lon: 80.7333 }
+  Rattota:         { lat: 7.4833, lon: 80.6833 }
+
+  # ── Kalutara District (western slopes) ────────────────────────────
+  Bulathsinhala:   { lat: 6.6500, lon: 80.1833 }
+  Ingiriya:        { lat: 6.7333, lon: 80.1333 }
+
+
+# ============================================================================
+#  Gemini AI Configuration
+#  Used for risk analysis, alert generation & Sinhala translations
+# ============================================================================
+
+gemini:
+  model: "gemini-2.5-flash"       # Free tier, supports Sinhala (සිංහල)
+  temperature: 0                   # Deterministic — no hallucination for alerts
+  max_output_tokens: 2048
+  language: "si"                   # Sinhala language code
